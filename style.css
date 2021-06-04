@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    line-height: 1.5em;
+    color: #222;
+}
+.top-bar {
+    background: rgb(180, 4, 27);
+}
+.logo a {
+    color:#fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 30px 0;
+    display: block;
+}
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.menu li {
+    list-style-type: none;
+}
+.menu a {
+    color:#fff;
+    text-decoration: none;
+    margin-right: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 30px 0;
+    display: block;
+}
+.sub-menu {
+    padding: 0;
+    background: #333;
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.2s ease-in-out;
+    z-index:2
+}
+.sub-menu a {
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    margin-right: 0;
+}
+.menu li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+}
+.header {
+    background-image: url(images/header-bg.jpg);
+    background-size: cover;
+    height: 500px;
+}
+.header h1 {
+    text-align: right;
+    color: #fff;
+}
+.right-header-side {
+    background: rgba(0,0,0,0.5);
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detail-search-block {
+    padding: 50px 0;
+}
+.product {
+    padding: 20px;
+    border: 1px solid #f1f1f1;
+    position: relative;
+    margin-bottom: 30px;
+}
+.sale {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 8px 20px;
+    color: #fff;
+    background: #333;
+}
+.product img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+.product h2 {
+    margin: 10px 0;
+    line-height: 16px;
+}
+.product h2 a {
+    font-size: 14px;
+    text-decoration: none;
+    color:rgb(180, 4, 27);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.current-price {
+    color:rgb(180, 4, 27);
+    font-size: 18px;
+    font-weight: bold;
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+.old-price {
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: line-through;
+    color: #777;
+}
+.add_to_card {
+    background: rgb(180, 4, 27);
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.add_to_card:hover {
+    background: rgb(139, 2, 20);;
+} 
+
+aside {
+    background: #f1f1f1;
+    height: 100vh;
+}
+.static {
+    position: sticky;
+    top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
